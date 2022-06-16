@@ -1,1 +1,1 @@
-[# trivial](https://darkbazory.github.io/trivial/)
+https://darkbazory.github.io/trivial/
