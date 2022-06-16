@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trivial</title>
+    <meta charset="utf-8">
+    <link href="trivial.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="underscore-1.8.3.min.js"></script>
+    <script src="trivial.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1>Trivial</h1>
+        <h2>Preguntas Finales</h2>
+      </div>
+      <!--<div class="countdown"><span class="time_left">12s</span></div>-->
+      <div class="points"><span class="points">0 puntos</span></div>
+    </header>
+    <div class="start">
+      <div class="card" id="initialCard">
+        <p>Tarjeta final: Debes acertar al menos 4 de las 6 preguntas para ganar</p>
+        <p>¿Listo para comenzar?</p>
+        <button class="start" id="boton">Comenzar</button>
+      </div>
+    </div>
+    <div class="play">
+      <div class="questions"></div>
+    </div>
+    <div class="finish card" id="final">
+      <p class="fallos">¡Lo sentimos, prueba no superada!</p>
+      <p>Has obtenido</p>
+      <p class="final_points">8 puntos</p>
+      <div class="play_again">
+        <button>Volver a jugar</button>
+      </div>
+    </div>
+  </body>
+</html>

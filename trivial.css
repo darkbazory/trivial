@@ -1,0 +1,223 @@
+body {
+	background-color:lightsteelblue;
+	margin: 0;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+button {
+	background: #00b7f8;
+    border-bottom: 5px solid #0045a6;
+    border-radius: 12px;
+    box-shadow: 6px 6px 6px #999;
+    color: #fff;
+    cursor: pointer;
+	padding: 10px 20px;
+	font-size: 20px;
+	
+}
+
+button:hover{
+	background: #0096f7;
+}
+
+header .title {
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background: linear-gradient(150deg, #0602eb, #16f102, #fd46c0);
+    background-size: 400% 300%;
+    animation: BgGradient 5s ease infinite;
+}
+
+@keyframes BgGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+header h1, header h2 {
+	margin: 0;
+	text-align: center;
+}
+
+header div.countdown {
+	float: right;
+}
+
+header div.points {
+	float: left;
+	-webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+header div.points.animate.right {
+	color: #767D76;
+}
+
+header div.points.animate.wrong {
+	color: #bf0000;
+}
+
+header div.countdown, header div.points {
+	font-weight: bold;
+	margin: 10px;
+	color: #fff;
+	padding: 0px;
+	font-size: 26px;
+}
+
+.card {
+	width: 500px;
+	background-color:#fff;
+	margin: 100px auto 30px auto;
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+}
+
+#initialCard {
+	background-image: url("imgInicial.png");
+}
+
+
+div.start .card {
+	display: block;
+}
+
+div.start .card p, .question.card span.question {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+div.start .card p, .question.card span.title {
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.card.question {
+	display: none;
+	
+}
+
+.card.question.marco {
+	background-color: #fff;
+}
+
+.card.question.active {
+	display: block;
+}
+
+.card.question .options {
+	padding: 0.5px;
+	list-style: none;
+	margin-top: 35px;
+	background-color: #fff;
+	border-radius: 20px;
+}
+
+.card.question .options > li {
+	margin: 10px 40px;
+}
+
+.card.question .options > li label {
+	background-color: #fff;
+	display: block;
+	padding: 10px;
+}
+
+.card.question .options > li label:hover {
+	background-color: white;
+}
+
+/*Aqui cambiamos los colores de las tarjetas segun se crean*/
+#colores0 {
+	background-color: rgb(214, 214, 7);
+}
+#colores1 {
+	background-color: rgb(30, 219, 71);
+}
+#colores2 {
+	background-color: rgb(202, 12, 186);
+}
+#colores3 {
+	background-color: rgb(255, 0, 21);
+}
+#colores4 {
+	background-color: rgb(44, 10, 236);
+}
+#colores5 {
+	background-color: #F58D23;
+}
+
+#preguntas {
+	background-color: white;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+/*Aqui cambiamos los colores de las opciones según se crean*/
+#opColores0:hover {
+	background-color: rgb(214, 214, 7);
+	color: white;
+	cursor: pointer;
+}
+#opColores1:hover {
+	background-color: rgb(30, 219, 71);
+	color: white;
+	cursor: pointer;
+}
+#opColores2:hover {
+	background-color: rgb(202, 12, 186);
+	color: white;
+	cursor: pointer;
+}
+#opColores3:hover {
+	background-color: rgb(255, 0, 21);
+	color: white;
+	cursor: pointer;
+}
+#opColores4:hover {
+	background-color: rgb(44, 10, 236);
+	color: white;
+	cursor: pointer;
+}
+#opColores5:hover {
+	background-color: #F58D23;
+	color: white;
+	cursor: pointer;
+}
+
+.card.question .options > li input:checked + label {
+	background-color: #4D8E8C !important;
+	color: #fff;
+}
+
+.card.question .options > li input {
+	opacity: 0;
+	display: none;
+}
+
+.finish {
+	display: none;
+}
+
+.card.finish p {
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.card.finish .final_points {
+	font-size: 40px;
+}
+
+.play_again,
+button.start {
+	width: 200px;
+	margin: 0 auto 20px auto;
+	color: #fff;
+}
+
